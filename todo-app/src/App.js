@@ -19,7 +19,7 @@ function App() {
   },[todos])
 
   function addTodo(todo){
-    setTodos({todo,...todos})
+    setTodos([todo,...todos])
   }
   function toggleComplete(id){
     setTodos(

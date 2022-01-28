@@ -6,10 +6,18 @@ function TodoForm(){
         task:"",
         completed: false
     })
+    function handleTaskInputChange(e){
+        setTodo({...todo, task: e.target.value});
+    }
     return(
         <form>
-            <input/>
-            <button/>
+            <input
+            name="task"
+            value={todo.task}
+            type="text"
+            onChange={handleTaskInputChange}
+            />
+            <button type="submit"/>
         </form>
     );
 }

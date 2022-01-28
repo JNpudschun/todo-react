@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #003844;
+  color:#B1EDE8;
 }
 body,html,#root{
   height: 100%;
